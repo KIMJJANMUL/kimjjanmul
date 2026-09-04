@@ -1,0 +1,268 @@
+<!doctype html>
+<!--
+  ────────────────────────────────────────────────────────────────
+  KIMJJANMUL — kimjjanmul.com
+  GitHub Pages: 이 파일을 저장소 루트에 index.html 로 커밋
+
+  DNS (Cloudflare, 전부 회색 구름 = DNS only)
+    A     @     185.199.108.153 / .109.153 / .110.153 / .111.153
+    CNAME www   <github-id>.github.io
+
+  Settings → Pages → Custom domain: kimjjanmul.com → Enforce HTTPS
+  ⚠️ 자동 생성되는 CNAME 파일은 지우지 말 것
+  ────────────────────────────────────────────────────────────────
+-->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KIMJJANMUL</title>
+<meta name="description" content="KIMJJANMUL — 앱과 소프트웨어를 만듭니다. Independent software development, Seoul.">
+<meta property="og:title" content="KIMJJANMUL">
+<meta property="og:description" content="앱과 소프트웨어를 만듭니다 · Independent software development, Seoul">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kimjjanmul.com">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+
+<style>
+  :root{
+    --fg:#191b1e;
+    --fg-2:#4a5058;
+    --fg-3:#8b929b;
+    --line:#e8e9ec;
+    --bg:#fdfdfc;
+    --sel:#dfe6f5;
+    --w:660px;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{
+      --fg:#e9eaec; --fg-2:#a5abb4; --fg-3:#6d747d;
+      --line:#26292e; --bg:#0f1113; --sel:#2b3550;
+    }
+  }
+
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  ::selection{background:var(--sel)}
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--fg);
+    font-family:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Segoe UI",Roboto,sans-serif;
+    font-size:16px;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    word-break:keep-all;
+  }
+  .wrap{max-width:var(--w);margin:0 auto;padding:0 26px}
+
+  a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line);}
+  a:hover{border-bottom-color:var(--fg-2);}
+
+  .mono{
+    font-family:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+    font-size:.9em;letter-spacing:-.01em;font-variant-numeric:tabular-nums;
+  }
+
+  /* ---------- masthead ---------- */
+  .top{padding:56px 0 0}
+  .name{
+    font-size:13px;font-weight:600;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--fg);
+  }
+
+  /* ---------- lede ---------- */
+  .lede{padding:44px 0 60px}
+  h1{
+    font-size:clamp(26px,4.6vw,34px);
+    line-height:1.45;letter-spacing:-.03em;font-weight:600;
+    margin:0 0 10px;
+  }
+  h1 .quiet{color:var(--fg-3);font-weight:500;}
+  .lede .sub{
+    font-size:16px;color:var(--fg-3);margin:0 0 30px;letter-spacing:-.01em;
+  }
+  .lede p{margin:0 0 14px;color:var(--fg-2);}
+  .lede p:last-child{margin-bottom:0}
+  .lede p.eng{font-size:14.5px;color:var(--fg-3);}
+
+  /* ---------- sections ---------- */
+  section{padding:40px 0;border-top:1px solid var(--line)}
+  h2{
+    font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--fg-3);margin:0 0 22px;
+  }
+
+  ul.doing{list-style:none;padding:0;margin:0}
+  ul.doing li{
+    padding:11px 0;border-bottom:1px solid var(--line);
+    display:grid;grid-template-columns:1fr auto;gap:14px;align-items:baseline;
+  }
+  ul.doing li:last-child{border-bottom:0;padding-bottom:0}
+  ul.doing li:first-child{padding-top:0}
+  ul.doing .k{color:var(--fg)}
+  ul.doing .v{color:var(--fg-3);font-size:13.5px;text-align:right}
+
+  /* ---------- info ---------- */
+  dl{margin:0}
+  dl > div{
+    display:grid;grid-template-columns:150px 1fr;gap:18px;
+    padding:9px 0;
+  }
+  @media (max-width:560px){
+    dl > div{grid-template-columns:1fr;gap:1px;padding:10px 0;border-bottom:1px solid var(--line)}
+    dl > div:last-child{border-bottom:0}
+  }
+  dt{color:var(--fg-3);font-size:14px}
+  dd{margin:0;color:var(--fg);font-size:15px}
+  dd .en{display:block;color:var(--fg-3);font-size:13.5px;margin-top:1px}
+
+  /* ---------- privacy ---------- */
+  .privacy p,.privacy li{color:var(--fg-2);font-size:14.5px;line-height:1.7}
+  .privacy p{margin:0 0 12px}
+  .privacy h3{
+    font-size:14.5px;font-weight:600;color:var(--fg);
+    margin:20px 0 4px;
+  }
+  .privacy ul{padding-left:18px;margin:4px 0 12px}
+  .privacy .note{color:var(--fg-3);font-size:13px;margin-top:18px}
+
+  footer{
+    padding:36px 0 60px;border-top:1px solid var(--line);
+    font-size:13px;color:var(--fg-3);
+    display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:space-between;
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="top">
+    <div class="name">KIMJJANMUL</div>
+  </div>
+
+  <!-- ───────── lede ───────── -->
+  <div class="lede">
+    <h1>앱과 소프트웨어를 만듭니다.<br><span class="quiet">Building apps and software.</span></h1>
+    <p class="sub">Independent software development · Seoul, Korea</p>
+
+    <p>
+      서울에서 활동하는 1인 개발 사업자입니다.
+      모바일 앱과 웹 서비스를 직접 설계하고 개발하며, 만든 것을 App Store를 비롯한
+      스토어와 웹에 올려 운영합니다.
+    </p>
+    <p class="eng">
+      KIMJJANMUL is a one-person software business based in Seoul, Republic of Korea.
+      I design and build mobile applications and web software, and publish and maintain
+      them myself — including on the Apple App Store.
+    </p>
+  </div>
+
+  <!-- ───────── what I do ───────── -->
+  <section>
+    <h2>하는 일 · Work</h2>
+    <ul class="doing">
+      <li><span class="k">모바일 앱 개발</span><span class="v">iOS · Android</span></li>
+      <li><span class="k">웹 서비스 및 백엔드 개발</span><span class="v">Web · Backend</span></li>
+      <li><span class="k">앱 퍼블리싱 및 운영</span><span class="v">Publishing &amp; Operations</span></li>
+      <li><span class="k">소프트웨어 개발 용역</span><span class="v">Contract Development</span></li>
+    </ul>
+  </section>
+
+  <!-- ───────── business info ───────── -->
+  <section>
+    <h2>사업자 정보 · Business Information</h2>
+    <dl>
+      <div>
+        <dt>상호</dt>
+        <dd>KIMJJANMUL</dd>
+      </div>
+      <div>
+        <dt>대표자</dt>
+        <dd>이병헌<span class="en">BYUNGHUN LEE</span></dd>
+      </div>
+      <div>
+        <dt>사업자등록번호</dt>
+        <dd class="mono">242-17-02615</dd>
+      </div>
+      <div>
+        <dt>D-U-N-S®</dt>
+        <dd class="mono">69-660-3145</dd>
+      </div>
+      <div>
+        <dt>사업자 유형</dt>
+        <dd>개인사업자<span class="en">Sole proprietorship, Republic of Korea</span></dd>
+      </div>
+      <div>
+        <dt>사업장 소재지</dt>
+        <dd>서울특별시 송파구 가락로 244, 3층 305-S108호<span class="en">305-S108, 244 Garak-ro, Songpa-gu, Seoul, 05644, Republic of Korea</span></dd>
+      </div>
+      <div>
+        <dt>연락처</dt>
+        <dd class="mono"><a href="tel:+821020679386">+82-10-2067-9386</a></dd>
+      </div>
+      <div>
+        <dt>이메일</dt>
+        <dd class="mono"><a href="mailto:contact@kimjjanmul.com">contact@kimjjanmul.com</a></dd>
+      </div>
+      <div>
+        <dt>개업</dt>
+        <dd class="mono">2026</dd>
+      </div>
+    </dl>
+  </section>
+
+  <!-- ───────── privacy ───────── -->
+  <section class="privacy" id="privacy">
+    <h2>개인정보처리방침 · Privacy Policy</h2>
+
+    <p>
+      KIMJJANMUL(이하 “운영자”)은 이용자의 개인정보를 소중히 다루며,
+      「개인정보 보호법」 등 관계 법령을 준수합니다.
+    </p>
+
+    <h3>수집 항목</h3>
+    <ul>
+      <li>문의 시 — 이메일 주소, 문의 내용</li>
+      <li>서비스 이용 시 — 서비스 제공에 필요한 최소한의 기기 정보 및 이용 기록</li>
+    </ul>
+
+    <h3>이용 목적</h3>
+    <ul>
+      <li>문의 응대 및 고객 지원</li>
+      <li>서비스 제공, 오류 개선 및 품질 향상</li>
+    </ul>
+
+    <h3>보유 및 파기</h3>
+    <p>수집 목적이 달성되면 지체 없이 파기합니다. 관계 법령이 보관을 요구하는 경우 그 기간 동안만 보관합니다.</p>
+
+    <h3>제3자 제공</h3>
+    <p>운영자는 이용자의 개인정보를 제3자에게 판매하거나 제공하지 않습니다. 법령에 따른 요구가 있는 경우에 한해 예외로 합니다.</p>
+
+    <h3>이용자의 권리</h3>
+    <p>이용자는 언제든지 자신의 개인정보에 대한 열람·정정·삭제·처리정지를 요청할 수 있습니다. <a href="mailto:contact@kimjjanmul.com">contact@kimjjanmul.com</a> 으로 요청하시면 지체 없이 조치합니다.</p>
+
+    <h3>책임자</h3>
+    <p>이병헌 · <a href="mailto:contact@kimjjanmul.com">contact@kimjjanmul.com</a></p>
+
+    <p class="note">
+      KIMJJANMUL collects only the minimum information required to provide and support its
+      services, never sells personal data, and deletes it once the purpose of collection is
+      fulfilled. To access, correct or delete your data, contact
+      <a href="mailto:contact@kimjjanmul.com">contact@kimjjanmul.com</a>.
+    </p>
+    <p class="note">시행일 · Effective 2026-09-01</p>
+  </section>
+
+  <footer>
+    <span>© <span id="y">2026</span> KIMJJANMUL</span>
+    <span class="mono">242-17-02615 · D-U-N-S 69-660-3145</span>
+  </footer>
+
+</div>
+
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
