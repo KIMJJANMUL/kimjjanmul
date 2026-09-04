@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CodeNote 개인정보 처리방침</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    max-width: 44rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  h1 { font-size: 1.7rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.25rem; }
+  .updated { color: #666; font-size: 0.9rem; margin-top: 0; }
+  ul { padding-left: 1.2rem; }
+  li { margin: 0.4rem 0; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.92em; }
+  .lede { font-size: 1.05rem; }
+  hr { border: 0; border-top: 1px solid #8883; margin: 2.5rem 0; }
+  .en { color: #555; }
+  @media (prefers-color-scheme: dark) { .updated, .en { color: #aaa; } }
+</style>
+</head>
+<body>
+
+<h1>CodeNote 개인정보 처리방침</h1>
+<p class="updated">최종 수정: 2026년 9월 3일</p>
+
+<p class="lede"><strong>CodeNote는 개인정보를 수집하지 않습니다.</strong> 앱이 스스로
+사용자 데이터를 외부로 전송하는 기능이 없습니다.</p>
+
+<h2>기기에만 저장되는 것</h2>
+<p>다음은 전부 기기 내부(앱 전용 저장 영역)에만 저장되며, 개발자를 포함한 누구에게도
+전송되지 않습니다.</p>
+<ul>
+  <li>손으로 쓴 노트의 필기 데이터</li>
+  <li>인식된 파이썬 코드 및 LaTeX 수식</li>
+  <li>코드 실행 결과와 생성된 그래프 이미지</li>
+  <li>노트 이름, 생성·수정 시각, 결과 패널 위치 같은 앱 설정</li>
+</ul>
+<p>앱을 삭제하면 이 데이터도 함께 삭제됩니다.</p>
+
+<h2>손글씨 인식</h2>
+<p>손글씨 인식은 <strong>전적으로 기기 안에서</strong> 이루어집니다. 인식 모델은 앱에
+포함되어 배포되며, 인식을 위해 필기나 이미지를 서버로 보내지 않습니다. 인식 기능을
+쓰기 위한 다운로드나 계정 로그인도 필요하지 않습니다.</p>
+
+<h2>네트워크 사용</h2>
+<p>앱 자체는 네트워크에 접속하지 않습니다. 다만 이 앱은 사용자가 작성한 파이썬 코드를
+실행하는 것이 목적이므로, <strong>사용자가 직접 작성한 코드가 네트워크에 접속할 수
+있습니다.</strong> 예를 들어 <code>requests</code> 라이브러리로 웹 API를 호출하는
+코드를 작성해 실행하면, 그 통신은 사용자가 지정한 서버와 직접 이루어집니다. 이 통신의
+내용은 개발자에게 전달되지 않으며 개발자가 관여하지 않습니다. 앱에 포함된 예시 노트
+중 하나가 이런 코드를 보여주기 위해 공개 API를 호출합니다.</p>
+
+<h2>문제 신고</h2>
+<p>앱의 “Report a Problem” 메뉴는 <strong>사용자가 직접 보낼 때만</strong> 동작합니다.
+시스템 메일 또는 공유 시트가 열리고, 사용자가 내용을 확인한 뒤 보낼지 결정합니다.
+자동으로 전송되는 것은 없습니다.</p>
+<p>첨부되는 진단 파일에는 다음이 들어갑니다.</p>
+<ul>
+  <li>앱 버전, iOS 버전, 기기 모델명</li>
+  <li>현재 노트의 이름과 코드, 마지막 실행 출력</li>
+  <li>최근 앱 동작 기록(실행 성공/실패 등)</li>
+</ul>
+<p>보내기 전에 내용을 직접 확인하고 수정하거나 취소할 수 있습니다.</p>
+
+<h2>추적 및 제3자 제공</h2>
+<ul>
+  <li>광고 식별자를 사용하지 않으며, 사용자를 추적하지 않습니다.</li>
+  <li>분석·광고 SDK를 포함하지 않습니다.</li>
+  <li>수집하는 정보가 없으므로 제3자에게 제공하거나 판매하는 정보도 없습니다.</li>
+</ul>
+
+<h2>아동의 개인정보</h2>
+<p>수집하는 개인정보가 없으므로, 연령과 무관하게 수집되는 정보가 없습니다.</p>
+
+<h2>변경 고지</h2>
+<p>이 방침이 바뀌면 이 페이지를 갱신하고 상단의 최종 수정일을 변경합니다.</p>
+
+<h2>문의</h2>
+<p>문의: <a href="mailto:contact@kimjjanmul.com">contact@kimjjanmul.com</a></p>
+
+<hr>
+
+<h1 class="en">CodeNote Privacy Policy</h1>
+<p class="updated">Last updated: September 3, 2026</p>
+
+<p class="lede"><strong>CodeNote does not collect any personal data.</strong> The app has
+no capability to transmit your data anywhere.</p>
+
+<h2>Stored only on your device</h2>
+<p>All of the following stays in the app's own storage on your device and is never
+transmitted, including to the developer:</p>
+<ul>
+  <li>Handwriting in your notes</li>
+  <li>Recognized Python code and LaTeX formulas</li>
+  <li>Execution output and generated plot images</li>
+  <li>Note names, timestamps, and app settings such as panel position</li>
+</ul>
+<p>Deleting the app deletes this data.</p>
+
+<h2>Handwriting recognition</h2>
+<p>Recognition runs <strong>entirely on your device</strong>. The model ships inside the
+app; no handwriting or image is sent to a server. No download or account is required.</p>
+
+<h2>Network use</h2>
+<p>The app itself makes no network connections. However, CodeNote exists to run Python
+code that you write, and <strong>your own code may access the network</strong> — for
+example, code using the <code>requests</code> library to call a web API. Such traffic goes
+directly between your device and the server you choose; the developer is not involved and
+receives nothing. One bundled example note calls a public API to demonstrate this.</p>
+
+<h2>Reporting a problem</h2>
+<p>The “Report a Problem” menu only acts <strong>when you send it yourself</strong>. A
+system mail or share sheet opens and you decide whether to send. Nothing is sent
+automatically. The attached diagnostic file contains your app/iOS version and device
+model, the current note's name, code and last output, and a recent activity log. You can
+review, edit, or cancel before sending.</p>
+
+<h2>Tracking and third parties</h2>
+<ul>
+  <li>No advertising identifiers; no user tracking.</li>
+  <li>No analytics or advertising SDKs.</li>
+  <li>Nothing is collected, so nothing is shared or sold.</li>
+</ul>
+
+<h2>Children's privacy</h2>
+<p>No personal data is collected from users of any age.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, this page will be updated and the date above revised.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:contact@kimjjanmul.com">contact@kimjjanmul.com</a></p>
+
+</body>
+</html>
